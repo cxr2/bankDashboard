@@ -1,6 +1,8 @@
 //ACCOUNT NAME + NUMBER
 
 const accNameDisplay = document.getElementById("accname");
+const balance = document.getElementById("balance");
+const accNoDisplay = document.getElementById("accno");
 
 let firstName = "Brian";
 let middleName = "P";
@@ -10,13 +12,9 @@ let accName = `${firstName} ${middleName} ${lastName}`;
 
 accNameDisplay.textContent = accName;
 
-const accNoDisplay = document.getElementById("accno");
-
 let accNo = 77652786;
 
 accNoDisplay.textContent = accNo;
-
-const balance = document.getElementById("balance");
 
 //GREETING + DATE + TIME
 const greetingDisplay = document.getElementById("greeting");
@@ -74,6 +72,7 @@ const withdrawBtn = document.querySelector("#withdraw-btn");
 savingsDepositBtn.addEventListener("click", () => {
   const savingsDepositStringToInt = inputToNumber("savings-deposit-amount");
   updateBalance("savings-balance", savingsDepositStringToInt);
+  updateBalance("balance", -1 * savingsDepositStringToInt);
 });
 
 ////get string from form, convert to number, minus from savings
@@ -143,7 +142,7 @@ fetch("https://api.sampleapis.com/fakebank/accounts")
       transactionData += `              <table class="table">
   <thead>
     <tr>
-      <th scope="col">${values.transactionDate}</th>
+      <th scope="col" class="tr-date">${values.transactionDate}</th>
       <th scope="col"></th>
       <th scope="col"></th>
       <th scope="col"></th>

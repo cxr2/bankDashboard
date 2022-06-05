@@ -74,6 +74,10 @@ h5 {
   font-size: 1.8em;
 }
 
+.currentacc {
+  font-weight: 600;
+}
+
 /* SAVINGS */
 
 .savings {
@@ -134,4 +138,8 @@ h4.debit {
 .container.transactions {
   padding-top: 1em;
   width: 85%;
+}
+
+.tr-date {
+  color: #666666;
 }
