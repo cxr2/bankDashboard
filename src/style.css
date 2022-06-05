@@ -1,0 +1,137 @@
+/* GENERAL */
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+section {
+  padding: 2em 2em;
+}
+
+#dashboard-greet {
+  padding: 0;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+#savings {
+  padding: 2em 10em;
+}
+/* HEADER */
+
+.brand {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+
+img.logo {
+  max-width: 80px;
+}
+
+/* GREETING */
+
+h3#greeting {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#date {
+  font-size: 20px;
+}
+
+#time {
+  font-size: 24px;
+}
+
+/* ACCOUNT/PROFILE */
+
+.col-3.profile {
+  background-color: #e5e5e5;
+  padding: 3em;
+}
+
+img.profpic {
+  max-width: 140px;
+
+  border-radius: 200px;
+}
+
+h5 {
+  display: block;
+  font-size: 10px;
+}
+
+#accname,
+#accno {
+  font-weight: 700;
+}
+
+#accno {
+  color: #666666;
+}
+
+.fa-solid.fa-sack-dollar {
+  font-size: 1.8em;
+}
+
+/* SAVINGS */
+
+.savings {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.savingsbalance {
+  color: #666666;
+}
+
+#savingsdeposit,
+#savingswithdraw {
+  border-radius: 120px;
+  margin: 1em 0.8em;
+}
+
+/* CURRENT BALANCE */
+
+.container.balance {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border-radius: 10px;
+  color: white;
+  width: 80%;
+}
+
+#deposit,
+#withdraw {
+  width: 140px;
+}
+
+#deposit {
+  margin: 1.3em 0;
+}
+
+.col-2 {
+  padding: 0;
+}
+
+.col-6 {
+  padding-right: 0;
+}
+
+/* TRANSACTIONS */
+
+h5.transDate {
+  font-size: 1em;
+  color: #666666;
+  display: inline-block;
+}
+
+h4.debit {
+  display: inline-block;
+}
+
+.container.transactions {
+  padding-top: 1em;
+  width: 85%;
+}
